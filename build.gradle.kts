@@ -11,8 +11,9 @@ repositories {
 
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.2")
+    implementation("com.codeborne:selenide:7.1.0")
+
 }
 
 tasks.test {
