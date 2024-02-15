@@ -1,4 +1,4 @@
-package tfs0.LDProjects;
+package tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,5 +9,6 @@ public class TestBase {
         Configuration.baseUrl = "https://ld3.landocs.ru:7443/tfs/LDProjects/ExternalTesting/";
         Configuration.browserSize = "1920x1080";
        Configuration.holdBrowserOpen = true;
+       Configuration.pageLoadStrategy = "eager";
     }
 }
